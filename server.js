@@ -22,6 +22,10 @@ const healthRoutes = require("./routes/health.routes");
 // This is for product requests
 const productRoutes = require("./routes/products.routes");
 
+// Import Product route file
+// This is for product requests
+const cartRoutes = require("./routes/cart.routes");
+
 // Create express app
 const app = express();
 
@@ -41,6 +45,11 @@ app.use("/", healthRoutes);
 // Use Product routes
 // Connect product routes
 app.use("/", productRoutes);
+
+// Use cart routes
+// Connect cart routes
+app.use("/", cartRoutes);
+
 
 // Confirm the backend server is running
 app.get("/", (req, res) => {
