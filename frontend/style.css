@@ -1,0 +1,234 @@
+/* App wrapper full height */
+.app-wrap {
+  min-height: 100vh;
+}
+
+/* Phone container */
+.phone {
+
+  /* Responsive width */
+  width: min(320px, 92vw);
+
+  /* Border */
+  border: 3px solid #0b1b27;
+
+  /* Rounded edges */
+  border-radius: 48px;
+
+  /* Inner spacing */
+  padding: 18px 16px;
+
+  /* Hide overflow */
+  overflow: hidden;
+}
+
+/* Menu box */
+.menu {
+
+  /* Size */
+  width: 44px;
+  height: 44px;
+
+  /* Background */
+  background: #111;
+
+  /* Rounded edges */
+  border-radius: 12px;
+
+  /* Position control */
+  position: relative;
+}
+
+/* Menu lines */
+.menu::before {
+
+  /* Empty content */
+  content: "";
+
+  /* Absolute position */
+  position: absolute;
+
+  /* Side spacing */
+  left: 10px;
+  right: 10px;
+
+  /* Top spacing */
+  top: 14px;
+
+  /* Line height */
+  height: 3px;
+
+  /* Line colour */
+  background: #fff;
+
+  /* Extra lines */
+  box-shadow: 0 9px 0 #fff, 0 18px 0 #fff;
+}
+
+/* Store buttons */
+.store {
+
+  /* Width */
+  width: 68px;
+
+  /* Height */
+  height: 34px;
+
+  /* Text size */
+  font-size: 11px;
+
+  /* Bold text */
+  font-weight: 800;
+}
+
+/* Dunnes colour */
+.dunnes { background: #0c3b2e; color: #fff; }
+
+/* Tesco colour */
+.tesco  { background: #fff; color: #e00000; }
+
+/* Lidl colour */
+.lidl   { background: #ffd400; color: #1b3fae; }
+
+/* Aldi colour */
+.aldi   { background: #1f4f8d; color: #fff; }
+
+/* Action buttons */
+.action {
+
+  /* Width */
+  width: 130px;
+
+  /* Height */
+  height: 56px;
+
+  /* Font size */
+  font-size: 12px;
+
+  /* Bold */
+  font-weight: 800;
+
+  /* Background */
+  background: #4a8fd6;
+}
+
+/* Shopping title */
+.list-title {
+
+  /* Width */
+  width: 210px;
+
+  /* Height */
+  height: 40px;
+
+  /* Background */
+  background: #e10000;
+
+  /* Text colour */
+  color: #fff;
+
+  /* Border */
+  border: 3px solid #0b1b27;
+
+  /* Rounded */
+  border-radius: 8px;
+
+  /* Center content */
+  display: grid;
+  place-items: center;
+
+  /* Letter spacing */
+  letter-spacing: 1px;
+}
+
+/* List box */
+.list-box {
+
+  /* Width */
+  width: 220px;
+
+  /* Fixed height (prevents screen growing) */
+  height: 240px;
+
+  /* Background */
+  background: #ff8f8f;
+
+  /* Border */
+  border: 3px solid #0b1b27;
+
+  /* Rounded */
+  border-radius: 22px;
+
+  /* Padding */
+  padding: 14px 16px 0 16px;
+
+  /* Position */
+  position: relative;
+
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Shopping items container */
+.cart-items {
+
+  /* Fill available space */
+  flex: 1;
+
+  /* Enable scrolling */
+  overflow-y: auto;
+
+  /* Ensure no gap at bottom */
+  margin-bottom: 0;
+}
+
+/* Modern scrollbar */
+.cart-items::-webkit-scrollbar {
+  width: 5px;
+}
+
+.cart-items::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.cart-items::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.4);
+  border-radius: 10px;
+}
+
+/* Individual item row */
+.cart-items div {
+
+  /* Row layout */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Spacing */
+  padding: 8px 0;
+
+  /* Divider */
+  border-bottom: 2px solid rgba(0,0,0,0.65);
+}
+
+/* Item name (left side) */
+.item-name {
+  flex: 1;
+}
+
+/* Quantity + price (right side) */
+.item-info {
+  white-space: nowrap;
+  margin-left: 10px;
+}
+
+/* Total text */
+.total {
+
+  /* Normal flow (no overlap) */
+  position: relative;
+
+  /* Spacing */
+  margin-top: 0;
+}
